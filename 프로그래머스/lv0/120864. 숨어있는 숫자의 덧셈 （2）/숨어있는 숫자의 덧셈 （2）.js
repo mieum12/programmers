@@ -11,3 +11,22 @@ function solution(my_string) {
     } 
     return answer
 }
+
+//다른 풀이1
+// function solution(my_string) {
+//   return my_string.split(/[^0-9]/).reduce((acc, cur) => acc + Number(cur), 0);
+// }
+
+//다른풀이2
+// function solution(my_string) {
+//   let result = 0;
+//   for (let i = 0; i < my_string.length; i++) {
+//     let thisNum = '';
+//     while (!Number.isNaN(Number(my_string[i]))) {
+//       thisNum += my_string[i];
+//       i++;
+//     }
+//     result += +thisNum;
+//   }
+//   return result;
+// }
